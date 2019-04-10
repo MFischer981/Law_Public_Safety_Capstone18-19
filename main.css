@@ -1,11 +1,12 @@
-
 html {
     box-sizing: border-box;
     background: black;
     overflow-x: hidden;
 }
-  
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -13,6 +14,8 @@ div#wrapper {
     position: relative;
     left: 0%;
     transition: 1s;
+
+
 }
 
 div#wrapper.menu {
@@ -22,15 +25,17 @@ div#wrapper.menu {
 body {
     margin: 0;
 }
+
 nav {
     display: block;
     height: 90px;
-    background: rgba(0, 0, 0, 0.7);
+    background: #f90;
     position: fixed;
     top: 0;
     z-index: 100;
     width: 100%;
 }
+
 header {
     display: block;
     background: url("background.png");
@@ -38,14 +43,16 @@ header {
     background-position: center;
     background-attachment: fixed;
 }
+
 header main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
 }
+
 header h1 {
     font-size: 60px;
-    color: white;
+    color: #f90;
     font-family: usual, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -54,7 +61,8 @@ header h1 {
     line-height: 1em;
     max-width: 720px;
 }
-header h2{
+
+header h2 {
     font-size: 36px;
     color: white;
     font-family: usual, sans-serif;
@@ -64,15 +72,16 @@ header h2{
     line-height: 1em;
     max-width: 600px;
 }
-header main a{
+
+header main a {
     display: inline-block;
     font-size: 26px;
-    color: white;
+    color: whitesmoke;
     font-family: usual, sans-serif;
     font-weight: 700;
     font-style: normal;
     margin: 40px 0 0;
-    border: 4px white solid;
+    border: 4px #f90 solid;
     padding: 12px 24px;
     text-decoration: none;
 }
@@ -82,7 +91,7 @@ header .spacer {
     height: 30px;
 }
 
-header p{
+header p {
     font-size: 28px;
     color: white;
     font-family: usual, sans-serif;
@@ -102,9 +111,10 @@ header p{
     background-position: center;
     z-index: 101;
 }
+
 #menu {
     display: block;
-    background: black;
+    background: #353535;
     padding: 20px;
     position: fixed;
     top: 0;
@@ -174,6 +184,7 @@ section {
     padding: 80px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: #353535;
 }
 
 article.white section {
@@ -182,10 +193,10 @@ article.white section {
     padding: 80px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: white;
+    background: #353535;
 }
 
-section div  {
+section div {
     padding: 10px 10px 80px;
     display: block;
     position: relative;
@@ -200,14 +211,14 @@ section svg {
 }
 
 section h1 {
-        font-size: 32px;
-        color: white;
-        font-family: usual, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        margin: 0;
-        line-height: 1em;
-        text-align: center;
+    font-size: 32px;
+    color: #f90;
+    font-family: usual, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    line-height: 1em;
+    text-align: center;
 }
 
 section p {
@@ -221,11 +232,11 @@ section p {
 section a {
     display: inline-block;
     font-size: 26px;
-    color: white;
+    color: whitesmoke;
     font-family: usual, sans-serif;
     font-weight: 700;
     font-style: normal;
-    border: 3px white solid;
+    border: 3px #f90 solid;
     padding: 12px 24px;
     text-decoration: none;
     position: absolute;
@@ -248,7 +259,7 @@ article {
 }
 
 article.white {
-    background: white;
+    background: #353535;
     padding: 40px 20px;
 }
 
@@ -288,7 +299,7 @@ article svg {
 
 article h1 {
     font-size: 48px;
-    color: white;
+    color: #f90;
     font-family: usual, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -301,16 +312,18 @@ article h1.hero {
 }
 
 article h2 {
-        font-size: 32px;
-        color: white;
-        font-family: usual, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        margin: 0;
-        line-height: 1em;
+    font-size: 32px;
+    color: white;
+    font-family: usual, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    line-height: 1em;
 }
 
-article h1.center, article h2.center, article p.center {
+article h1.center,
+article h2.center,
+article p.center {
     text-align: center;
     margin: 16px 0 0;
 }
@@ -327,15 +340,16 @@ article p {
 article a {
     display: inline-block;
     font-size: 26px;
-    color: white;
+    color: whitesmoke;
     font-family: usual, sans-serif;
     font-weight: 700;
     font-style: normal;
-    border: 3px white solid;
+    border: 3px #f90 solid;
     padding: 12px 24px;
     text-decoration: none;
     margin: 10px 10px 20px 0;
 }
+
 article a.center {
     position: relative;
     left: 50%;
@@ -343,9 +357,17 @@ article a.center {
     margin-top: 30px;
 }
 
-article.white h1, article.white h2, article.white p, article.white a {
-    color: black;
+article.white h1,
+    {
+    color: #f90;
     border-color: black;
+    text-align: left;
+}
+
+article.white h2,
+article.white p,
+article.white a {
+
     text-align: left;
 }
 
@@ -354,9 +376,12 @@ article.white p {
 }
 
 @media screen and (max-width: 768px) {
-    section, article.white section {
+
+    section,
+    article.white section {
         grid-template-columns: 1fr;
     }
+
     article.white section div.image {
         display: block;
         height: 400px;
