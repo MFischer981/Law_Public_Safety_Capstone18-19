@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    background: black;
+    background-color: #353535;
     overflow-x: hidden;
 }
 
@@ -84,6 +84,13 @@ header main a {
     border: 4px #f90 solid;
     padding: 12px 24px;
     text-decoration: none;
+    outline: 0 #f90 solid;
+    transition: .2s;
+    text-transform: uppercase;
+}
+
+header main a:hover {
+    background: #f90;
 }
 
 header .spacer {
@@ -114,7 +121,7 @@ header p {
 
 #menu {
     display: block;
-    background: #353535;
+    background: rgb(12, 12, 12);
     padding: 20px;
     position: fixed;
     top: 0;
@@ -161,7 +168,7 @@ header p {
 
 #menu h1 {
     display: block;
-    color: white;
+    color: #f90;
     font-family: usual, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -170,6 +177,7 @@ header p {
     clear: both;
     margin-top: 10px;
     padding-top: 0;
+    text-transform: uppercase;
 }
 
 #menu img {
@@ -242,6 +250,13 @@ section a {
     position: absolute;
     bottom: 20px;
     text-align: center;
+    text-transform: uppercase;
+    transition: .2s;
+
+}
+
+section a:hover {
+    background: #f90;
 }
 
 article.white section div {
@@ -348,6 +363,9 @@ article a {
     padding: 12px 24px;
     text-decoration: none;
     margin: 10px 10px 20px 0;
+    text-transform: uppercase;
+    transition: .2s;
+
 }
 
 article a.center {
@@ -355,6 +373,10 @@ article a.center {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 30px;
+}
+
+article a:hover {
+    background: #f90;
 }
 
 article.white h1 {
@@ -377,7 +399,7 @@ article.white p {
 iframe {
     width: 100%;
     display: block;
-    height: 400px;
+    height: 600px;
 }
 
 @media screen and (max-width: 768px) {
