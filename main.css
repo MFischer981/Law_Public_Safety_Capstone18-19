@@ -357,8 +357,7 @@ article a.center {
     margin-top: 30px;
 }
 
-article.white h1,
-    {
+article.white h1 {
     color: #f90;
     border-color: black;
     text-align: left;
@@ -373,6 +372,12 @@ article.white a {
 
 article.white p {
     margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    display: block;
+    height: 400px;
 }
 
 @media screen and (max-width: 768px) {
