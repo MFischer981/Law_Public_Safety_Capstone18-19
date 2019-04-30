@@ -204,6 +204,7 @@ section.footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #353535;
+
 }
 
 article.white section {
@@ -277,6 +278,19 @@ section.footer a {
     font-size: 22px;
 }
 
+section.footer a:after {
+    display: block;
+    content: '';
+    height: 3px;
+    background: #f90;
+    width: 0%;
+    transition: .4s;
+}
+
+.footer a:hover::after {
+    width: 100%;
+}
+
 section.footer h1 {
     text-align: left;
     margin-bottom: 30px;
@@ -286,12 +300,14 @@ section.footer a.social {
     font-size: 32px;
     display: inline-block;
     border-radius: 50px;
-    border: 3px solid #f90;
+    border: 3px solid whitesmoke;
     height: 64px;
     width: 64px;
     position: relative;
     text-align: center;
 }
+
+
 
 section.footer a.social i {
     position: absolute;
@@ -299,12 +315,10 @@ section.footer a.social i {
     transform: translateX(-50%) translateY(-50%);
 }
 
-section a:hover {
-    background: #f90;
-}
+
 
 section.footer a:hover {
-    color: black;
+    color: #f90;
 }
 
 article.white section div {
