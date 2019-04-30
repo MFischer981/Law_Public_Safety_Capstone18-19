@@ -195,13 +195,22 @@ section {
     background-color: #353535;
 }
 
+section.footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #353535;
+}
+
 article.white section {
     max-width: 1400px;
     margin: 0 auto;
     padding: 80px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: #353535;
+    background: black;
 }
 
 section div {
@@ -255,8 +264,44 @@ section a {
 
 }
 
+section.footer a {
+    position: relative;
+    display: block;
+    padding: 6px 6px 6px;
+    border: 0;
+    text-align: left;
+    border-bottom: 3px solid #f90;
+    margin-top: 4px;
+}
+
+section.footer h1 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+section.footer a.social {
+    font-size: 32px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 3px solid #f90;
+    height: 64px;
+    width: 64px;
+    position: relative;
+    text-align: center;
+}
+
+section.footer a.social i {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 section a:hover {
     background: #f90;
+}
+
+section.footer a:hover {
+    color: black;
 }
 
 article.white section div {
@@ -269,12 +314,12 @@ article.white section a {
 }
 
 article {
-    background: linear-gradient(black, rgb(12, 12, 12));
+    background: linear-gradient(45deg, black, rgb(56, 56, 56));
     padding: 40px 20px;
 }
 
 article.white {
-    background: #353535;
+    background: black;
     padding: 40px 20px;
 }
 
