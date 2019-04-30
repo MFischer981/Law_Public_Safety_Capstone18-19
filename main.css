@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     background-color: #353535;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -24,6 +25,7 @@ div#wrapper.menu {
 
 body {
     margin: 0;
+
 }
 
 nav {
@@ -271,7 +273,8 @@ section.footer a {
     border: 0;
     text-align: left;
     border-bottom: 3px solid #f90;
-    margin-top: 4px;
+    margin-top: 8px;
+    font-size: 22px;
 }
 
 section.footer h1 {
@@ -463,17 +466,17 @@ iframe {
 #buttonTop {
     position: fixed;
     bottom: 30px;
-    right: 15px;
-    border: 3px solid black;
+    right: 30px;
     background-color: #f90;
     color: white;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 15px;
-    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    border: none;
     scroll-behavior: smooth;
 }
 
 #buttonTop:hover {
-    background-color: rgb(85, 85, 112);
+    background-color: black;
 }
