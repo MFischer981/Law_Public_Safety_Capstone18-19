@@ -202,6 +202,7 @@ section.footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #353535;
+
 }
 
 article.white section {
@@ -270,8 +271,20 @@ section.footer a {
     padding: 6px 6px 6px;
     border: 0;
     text-align: left;
-    border-bottom: 3px solid whitesmoke;
     margin-top: 4px;
+}
+
+section.footer a:after {
+    display: block;
+    content: '';
+    height: 3px;
+    background: #f90;
+    width: 0%;
+    transition: .4s;
+}
+
+.footer a:hover::after {
+    width: 100%;
 }
 
 section.footer h1 {
@@ -289,6 +302,8 @@ section.footer a.social {
     position: relative;
     text-align: center;
 }
+
+
 
 section.footer a.social i {
     position: absolute;
