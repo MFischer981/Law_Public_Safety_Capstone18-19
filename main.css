@@ -200,11 +200,10 @@ section {
 section.footer {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 40px 20px 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #353535;
-
 }
 
 article.white section {
@@ -269,8 +268,8 @@ section a {
 
 section.footer a {
     position: relative;
-    display: block;
-    padding: 6px 6px 6px;
+    display: inline-block;
+    padding: 6px 0;
     border: 0;
     text-align: left;
     margin-top: 4px;
@@ -279,7 +278,7 @@ section.footer a {
 section.footer a:after {
     display: block;
     content: '';
-    height: 3px;
+    height: 5px;
     background: #f90;
     width: 0%;
     transition: .4s;
@@ -305,15 +304,15 @@ section.footer a.social {
     text-align: center;
 }
 
-
+section.footer a.social:after {
+    height: 0;
+}
 
 section.footer a.social i {
     position: absolute;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
-
-
 
 section.footer a:hover {
     color: #f90;
@@ -343,7 +342,8 @@ article.white div.image {
     background: url("background.png");
     background-size: cover;
     background-position: center;
-    box-shadow: 20px 20px 0 rgb(54, 54, 54);
+    outline: 10px #f90 solid;
+    outline-offset: -20px;
 }
 
 article#crime {
@@ -484,9 +484,9 @@ iframe {
     cursor: pointer;
     padding: 15px;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 24px;
 }
 
 #buttonTop:hover {
-    background-color: rgb(85, 85, 112);
+    background-color: black;
 }
