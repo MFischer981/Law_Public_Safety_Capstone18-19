@@ -281,11 +281,11 @@ section.footer a:after {
     height: 5px;
     background: #f90;
     width: 0%;
-    transition: .4s;
+    transition: .7s;
 }
 
 .footer a:hover::after {
-    width: 100%;
+    width: 75%;
 }
 
 section.footer h1 {
