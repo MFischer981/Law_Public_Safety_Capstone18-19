@@ -285,7 +285,7 @@ section.footer a:after {
 }
 
 .footer a:hover::after {
-    width: 75%;
+    width: 100%;
 }
 
 section.footer h1 {
