@@ -37,7 +37,7 @@
                 <a href="#">anna.anderson@west-mec.org </a>
             </div>
             <main>
-                <h1 class="wow fadeInLeft">Law, Public Safety, & Security</h1>
+                <h1 class="wow fadeInLeft">Law, Public Safety & Security</h1>
                 <h2 class="wow fadeInLeftBig">Discover Your Future Career In Law & Public Safety</h2>
                 <a href="#">Apply Now</a>
                 <div class="spacer"></div>
@@ -204,16 +204,16 @@
                     information about the program.</h2>
                 <form action="">
                     <label for="">Name</label>
-                    <input type="text">
+                    <input type="text" required id="name">
                     <label for="">COMPANY</label>
-                    <input type="text">
+                    <input type="text" required id="company">
                     <label for="">PHONE NUMBER</label>
-                    <input type="text">
+                    <input type="text" required id="phone">
                     <label for="">EMAIL</label>
-                    <input type="text">
+                    <input type="text" required id="email">
                     <label for="">COMMENT</label>
-                    <textarea name="" id=""></textarea>
-                    <button>SEND COMMENT</button> <button>CLEAR</button>
+                    <textarea name="" id="comment" required></textarea>
+                    <button onclick="runSubmit()">SEND COMMENT</button> <button>CLEAR</button>
                 </form>
             </div>
         </article>
