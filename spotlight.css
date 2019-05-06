@@ -1,0 +1,16 @@
+.feature_crime {
+    background: url("https://cdn.thinglink.me/api/image/888503589956222978/1240/10/scaletowidth") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.spotlight {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 160px, rgba(0, 0, 0, 0.85) 200px);
+    transition: .2s;
+    top: 0;
+    height: 100vh;
+    cursor: crosshair;
+}
