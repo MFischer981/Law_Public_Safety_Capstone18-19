@@ -412,7 +412,7 @@ article.white div.image {
     background: url("background.png");
     background-size: cover;
     background-position: center;
-    outline: 10px #f90 solid;
+    outline: 20px #f90 solid;
     outline-offset: -20px;
 }
 
@@ -596,8 +596,8 @@ iframe {
     position: fixed;
     bottom: 30px;
     right: 15px;
-    background-color: #f90;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: #f90;
     cursor: pointer;
     padding: 15px;
     border-radius: 15px;
@@ -606,7 +606,8 @@ iframe {
 }
 
 #buttonTop:hover {
-    background-color: black;
+    background-color: #434443;
+    ;
 }
 
 form label {
