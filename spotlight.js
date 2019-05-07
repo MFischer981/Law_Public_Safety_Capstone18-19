@@ -2,13 +2,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const spotlight = document.querySelector('.spotlight');
 
-    let spotlightSize = 'transparent 120px, rgba(0, 0, 0, 0.85) 200px)';
+    let spotlightSize = 'transparent 80px, rgba(0, 0, 0, 0.95) 100px)';
 
     window.addEventListener('mousemove', e => updateSpotlight(e));
 
     window.addEventListener('mousedown', e => {
 
-        spotlightSize = 'transparent 130px, rgba(0, 0, 0, 0.95) 150px)';
+        spotlightSize = 'transparent 60px, rgba(0, 0, 0, 0.95) 80px)';
 
         updateSpotlight(e);
 
@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener('mouseup', e => {
 
-        spotlightSize = 'transparent 160px, rgba(0, 0, 0, 0.85) 200px)';
+        spotlightSize = 'transparent 80px, rgba(0, 0, 0, 0.95) 100px)';
 
         updateSpotlight(e);
 
@@ -28,3 +28,4 @@ window.addEventListener("DOMContentLoaded", () => {
 
     }
 });
+

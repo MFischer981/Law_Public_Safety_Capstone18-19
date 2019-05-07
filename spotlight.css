@@ -1,16 +1,229 @@
 .feature_crime {
-    background: url("https://cdn.thinglink.me/api/image/888503589956222978/1240/10/scaletowidth") no-repeat center;
-    background-size: cover;
+    background: url("https://i.pinimg.com/originals/b7/af/28/b7af28f60c4f257df714ae2a139a4fcd.jpg") repeat center;
     height: 100vh;
+}
+
+audio {
+    position: absolute;
+    opacity: 0;
 }
 
 .spotlight {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 160px, rgba(0, 0, 0, 0.85) 200px);
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 80px, rgba(0, 0, 0, 0.95) 100px);
     transition: .2s;
     top: 0;
     height: 100vh;
     cursor: crosshair;
+}
+
+.spotlight h1 {
+    font-size: 60px;
+    color: white;
+    font-family: usual, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    opacity: .2;
+    margin: 0;
+}
+
+#blood {
+    display: block;
+    height: 300px;
+    width: 300px;
+    background: url("blood.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40%;
+    left: 41%;
+}
+
+#marker1 {
+    display: block;
+    height: 103.75px;
+    width: 98.875px;
+    background: url("marker1.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 37%;
+    left: 48%;
+}
+
+#documents {
+    display: block;
+    height: 200px;
+    width: 200px;
+    background: url("documents.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 27%;
+    left: 56%;
+}
+
+#marker2 {
+    display: block;
+    height: 103.75px;
+    width: 98.875px;
+    background: url("marker2.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 24%;
+    left: 62%;
+}
+
+#weapon {
+    display: block;
+    height: 100px;
+    width: 100px;
+    background: url("weapon.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70%;
+    left: 76%;
+    filter: drop-shadow(0 0 10px black);
+}
+
+#marker4 {
+    display: block;
+    height: 103.75px;
+    width: 98.875px;
+    background: url("marker4.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 61%;
+    left: 76%;
+}
+
+#prints {
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: url("prints.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    left: 86%;
+    mix-blend-mode: multiply;
+    opacity: .5;
+}
+
+#prints_flip {
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: url("prints.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 25%;
+    left: 78%;
+    mix-blend-mode: multiply;
+    opacity: .5;
+    transform: rotateY(180deg) rotateZ(-40deg);
+}
+
+#marker3 {
+    display: block;
+    height: 103.75px;
+    width: 98.875px;
+    background: url("marker3.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 8%;
+    left: 80%;
+}
+
+#footprint {
+    display: block;
+    height: 130px;
+    width: 130px;
+    background: url("footprint.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    mix-blend-mode: multiply;
+    opacity: .5;
+}
+
+#footprint_flip {
+    display: block;
+    height: 130px;
+    width: 130px;
+    background: url("footprint.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 65%;
+    left: 6%;
+    transform: rotateY(180deg);
+    mix-blend-mode: multiply;
+    opacity: .5;
+}
+
+
+#body {
+    display: block;
+    height: 400px;
+    width: 800px;
+    background: url("body.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+#marker5 {
+    display: block;
+    height: 103.75px;
+    width: 98.875px;
+    background: url("marker5.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 4%;
+    left: 48%;
+}
+
+#drugs {
+    display: block;
+    height: 150px;
+    width: 150px;
+    background: url("drugs.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12%;
+    left: 45%;
 }
