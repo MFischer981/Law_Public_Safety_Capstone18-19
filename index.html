@@ -15,33 +15,38 @@
         new WOW().init();
     </script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
     <link rel="stylesheet" href="spotlight.css">
-    <script src="spotlight.js"></script>
+
 </head>
 
 <body>
     <div class="feature_crime">
-            <audio controls autoplay>
-                    <source src="horse.ogg" type="audio/ogg">
-                    <source src="horse.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                  </audio>
-            <div id="marker5"></div>
-            <div id="drugs"></div>
-        <div id="marker3"></div>
-        <div id="prints"></div>
-        <div id="prints_flip"></div>
-        <div id="marker2"></div>
-        <div id="documents"></div>
-        <div id="footprint"></div>
-        <div id="footprint_flip"></div>
-        <div id="marker1"></div>
-        <div id="blood"></div>
-        <div id="body"></div>
-
-        <div id="marker4"></div>
-        <div id="weapon"></div>
+        <!-- Evidence Marker -->
+        <div id="marker5" onclick="popUp(0)"></div>
+        <!-- Drugs -->
+        <div id="drugs" onclick="popUp(1)"></div>
+        <!-- Evidence Marker -->
+        <div id="marker3" onclick="popUp(0)"></div>
+        <!-- Fingerprints -->
+        <div id="prints" onclick="popUp(2)"></div>
+        <div id="prints_flip" onclick="popUp(2)"></div>
+        <!-- Evidence Marker -->
+        <div id="marker2" onclick="popUp(0)"></div>
+        <!-- Documents -->
+        <div id="documents" onclick="popUp(3)"></div>
+        <!-- Footprints -->
+        <div id="footprint" onclick="popUp(4)"></div>
+        <div id="footprint_flip" onclick="popUp(4)"></div>
+        <!-- Evidence Marker -->
+        <div id="marker1" onclick="popUp(0)"></div>
+        <!-- Blood -->
+        <div id="blood" onclick="popUp(5)"></div>
+        <!-- Body -->
+        <div id="body" onclick="popUp(6)"></div>
+        <!-- Evidence Marker -->
+        <div id="marker4" onclick="popUp(0)"></div>
+        <!-- Murder Weapon -->
+        <div id="weapon" onclick="popUp(7)"></div>
     </div>
     <div class="spotlight">
         <h1 id="evidence">Find Evidence At the Crime Scene</h1>
@@ -291,6 +296,9 @@
         <!-- End of Wrapper -->
     </div>
     <a id="buttonTop" href="#wrapper"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="main.js"></script>
+    <script src="spotlight.js"></script>
 </body>
 
 </html>

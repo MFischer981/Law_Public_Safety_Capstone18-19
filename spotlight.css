@@ -17,6 +17,7 @@ audio {
     top: 0;
     height: 100vh;
     cursor: crosshair;
+    pointer-events: none;
 }
 
 .spotlight h1 {
