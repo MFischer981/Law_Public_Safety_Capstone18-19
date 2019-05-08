@@ -55,12 +55,7 @@ nav {
 header {
     position: relative;
     display: block;
-    background: repeating-linear-gradient(45deg,
-            rgba(255, 153, 0, 0.025),
-            rgba(255, 153, 0, 0.025) 40px,
-            rgba(0, 0, 0, 0.025) 40px,
-            rgba(0, 0, 0, 0.025) 80px),
-        url("background.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("students.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
