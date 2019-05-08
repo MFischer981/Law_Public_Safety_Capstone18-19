@@ -239,7 +239,7 @@ article.white section {
 
 
 section div {
-    padding: 10px 10px 80px;
+    padding: 10px 10px;
     display: block;
     position: relative;
     margin: 10px;
@@ -284,13 +284,15 @@ section a {
     border: 3px #f90 solid;
     padding: 12px 24px;
     text-decoration: none;
-    position: absolute;
-    bottom: 20px;
+    position: relative;
     text-align: center;
     text-transform: uppercase;
     transition: .2s;
-
+    margin: 10px 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 
 section.footer a {
     position: relative;
@@ -298,7 +300,10 @@ section.footer a {
     padding: 0px 10px 10px;
     border: 0;
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
+    left: 0;
+    transform: translateX(0);
+    margin: 0;
 }
 
 section.footer a:after {
@@ -312,6 +317,11 @@ section.footer a:after {
 
 .footer a:hover::after {
     width: 100%;
+}
+
+section#clear a {
+    left: 0;
+    transform: translateX(0);
 }
 
 .footer img {
