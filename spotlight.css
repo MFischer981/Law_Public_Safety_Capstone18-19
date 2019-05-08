@@ -1,5 +1,5 @@
 .feature_crime {
-    background: url("https://ak5.picdn.net/shutterstock/videos/25857725/thumb/1.jpg") repeat center;
+    background: url("road.jpg") repeat center;
     height: 100vh;
     cursor: crosshair;
 }
@@ -7,7 +7,7 @@
 .popup {
     display: block;
     padding: 20px;
-    background: url("https://images.fineartamerica.com/images-medium-large-5/1-vintage-paper-texture-background-katsumi-murouchi.jpg");
+    background: url("paper.jpg");
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -86,7 +86,6 @@
     position: absolute;
     top: 80%;
     left: 41%;
-    mix-blend-mode: overlay;
 }
 
 #marker1 {
@@ -302,4 +301,8 @@
     position: absolute;
     top: 9%;
     left: 3%;
+}
+
+.clickable:hover {
+    filter: drop-shadow(0 0 10px rgb(0, 217, 255));
 }
