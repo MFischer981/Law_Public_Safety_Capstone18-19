@@ -56,10 +56,10 @@ header {
     position: relative;
     display: block;
     background: repeating-linear-gradient(45deg,
-        rgba(255, 153, 0, 0.025),
-        rgba(255, 153, 0, 0.025) 40px,
-        rgba(0, 0, 0, 0.025) 40px,
-        rgba(0, 0, 0, 0.025) 80px),
+            rgba(255, 153, 0, 0.025),
+            rgba(255, 153, 0, 0.025) 40px,
+            rgba(0, 0, 0, 0.025) 40px,
+            rgba(0, 0, 0, 0.025) 80px),
         url("background.png");
     background-size: cover;
     background-position: center;
@@ -412,7 +412,7 @@ article.white div.image {
     background: url("background.png");
     background-size: cover;
     background-position: center;
-    outline: 20px #f90 solid;
+    outline: 17px rgba(255, 162, 0, 0.577) solid;
     outline-offset: -20px;
 }
 
@@ -641,6 +641,7 @@ form input {
     font-size: 22px;
     background: transparent;
     text-transform: uppercase;
+    outline: none;
 }
 
 form textarea {
@@ -662,4 +663,11 @@ form textarea {
     width: 80%;
     height: 120px;
     resize: none;
+    outline: none;
+}
+
+input::placeholder {
+    outline: none;
+    color: #c9c5c5e2;
+    font-size: 17px;
 }
