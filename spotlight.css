@@ -1,38 +1,78 @@
 .feature_crime {
-    background: url("https://i.pinimg.com/originals/b7/af/28/b7af28f60c4f257df714ae2a139a4fcd.jpg") repeat center;
+    background: url("https://ak5.picdn.net/shutterstock/videos/25857725/thumb/1.jpg") repeat center;
     height: 100vh;
+    cursor: crosshair;
 }
 
-audio {
+.popup {
+    display: block;
+    padding: 20px;
+    background: url("https://images.fineartamerica.com/images-medium-large-5/1-vintage-paper-texture-background-katsumi-murouchi.jpg");
+    background-position: center;
+    background-size: cover;
     position: absolute;
-    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 12px;
+    box-shadow: 0 0 20px black;
 }
 
 .spotlight {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 80px, rgba(0, 0, 0, 0.95) 100px);
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 120px, rgba(0, 0, 0, 0.75) 160px);
     transition: .2s;
     top: 0;
     height: 100vh;
-    cursor: crosshair;
     pointer-events: none;
+}
+
+.spotlight .popup {
+    pointer-events: all;
 }
 
 .spotlight h1 {
     font-size: 60px;
-    color: white;
+    color: black;
     font-family: usual, sans-serif;
     font-weight: 700;
     font-style: normal;
-    position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
     text-align: center;
-    opacity: .2;
     margin: 0;
+}
+
+.spotlight p {
+    font-size: 28px;
+    color: black;
+    font-family: usual, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    text-align: center;
+    z-index: 5;
+    margin: 0 auto;
+    max-width: 600px;
+    display: block;
+}
+
+.spotlight img {
+    display: block;
+    margin: 20px auto;
+    height: 200px;
+}
+
+.spotlight button {
+    background: none;
+    border: none;
+    font-size: 48px;
+    color: black;
+    display: block;
+    margin: 0 auto;
+    
 }
 
 #blood {
@@ -44,47 +84,48 @@ audio {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 40%;
+    top: 80%;
     left: 41%;
+    mix-blend-mode: overlay;
 }
 
 #marker1 {
     display: block;
     height: 103.75px;
     width: 98.875px;
-    background: url("marker1.png");
+    background: url("marker.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 37%;
+    top: 73%;
     left: 48%;
 }
 
 #documents {
     display: block;
-    height: 200px;
-    width: 200px;
+    height: 125px;
+    width: 125px;
     background: url("documents.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     top: 27%;
-    left: 56%;
+    left: 26%;
 }
 
 #marker2 {
     display: block;
     height: 103.75px;
     width: 98.875px;
-    background: url("marker2.png");
+    background: url("marker.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 24%;
-    left: 62%;
+    top: 36%;
+    left: 23%;
 }
 
 #weapon {
@@ -98,14 +139,13 @@ audio {
     position: absolute;
     top: 70%;
     left: 76%;
-    filter: drop-shadow(0 0 10px black);
 }
 
 #marker4 {
     display: block;
     height: 103.75px;
     width: 98.875px;
-    background: url("marker4.png");
+    background: url("marker.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -125,7 +165,6 @@ audio {
     position: absolute;
     top: 20%;
     left: 86%;
-    mix-blend-mode: multiply;
     opacity: .5;
 }
 
@@ -140,7 +179,6 @@ audio {
     position: absolute;
     top: 25%;
     left: 78%;
-    mix-blend-mode: multiply;
     opacity: .5;
     transform: rotateY(180deg) rotateZ(-40deg);
 }
@@ -149,7 +187,7 @@ audio {
     display: block;
     height: 103.75px;
     width: 98.875px;
-    background: url("marker3.png");
+    background: url("marker.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -169,7 +207,6 @@ audio {
     position: absolute;
     top: 80%;
     left: 10%;
-    mix-blend-mode: multiply;
     opacity: .5;
 }
 
@@ -185,21 +222,33 @@ audio {
     top: 65%;
     left: 6%;
     transform: rotateY(180deg);
-    mix-blend-mode: multiply;
     opacity: .5;
+}
+
+#marker6 {
+    display: block;
+    height: 103.75px;
+    width: 98.875px;
+    background: url("marker.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 64%;
+    left: 14%;
 }
 
 
 #body {
     display: block;
-    height: 400px;
+    height: 191.11px;
     width: 800px;
     background: url("body.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 45%;
 }
 
@@ -207,7 +256,7 @@ audio {
     display: block;
     height: 103.75px;
     width: 98.875px;
-    background: url("marker5.png");
+    background: url("marker.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -218,13 +267,39 @@ audio {
 
 #drugs {
     display: block;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     background: url("drugs.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 12%;
+    top: 14%;
     left: 45%;
+}
+
+#wallet {
+    display: block;
+    height: 100px;
+    width: 100px;
+    background: url("wallet.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 14%;
+    left: 7%;
+}
+
+#marker7 {
+    display: block;
+    height: 103.75px;
+    width: 98.875px;
+    background: url("marker.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 9%;
+    left: 3%;
 }

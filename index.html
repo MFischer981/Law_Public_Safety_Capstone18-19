@@ -20,36 +20,48 @@
 </head>
 
 <body>
+        
     <div class="feature_crime">
         <!-- Evidence Marker -->
-        <div id="marker5" onclick="popUp(0)"></div>
+        <div class="clickable" id="marker5" onclick="popUp(0)"></div>
         <!-- Drugs -->
-        <div id="drugs" onclick="popUp(1)"></div>
+        <div class="clickable" id="drugs" onclick="popUp(1)"></div>
         <!-- Evidence Marker -->
-        <div id="marker3" onclick="popUp(0)"></div>
+        <div class="clickable" id="marker3" onclick="popUp(0)"></div>
         <!-- Fingerprints -->
-        <div id="prints" onclick="popUp(2)"></div>
-        <div id="prints_flip" onclick="popUp(2)"></div>
-        <!-- Evidence Marker -->
-        <div id="marker2" onclick="popUp(0)"></div>
+        <div class="clickable" id="prints" onclick="popUp(2)"></div>
+        <div class="clickable" id="prints_flip" onclick="popUp(2)"></div>
         <!-- Documents -->
-        <div id="documents" onclick="popUp(3)"></div>
+        <div class="clickable" id="documents" onclick="popUp(3)"></div>
+        <!-- Evidence Marker -->
+        <div class="clickable" id="marker2" onclick="popUp(0)"></div>
         <!-- Footprints -->
-        <div id="footprint" onclick="popUp(4)"></div>
-        <div id="footprint_flip" onclick="popUp(4)"></div>
+        <div class="clickable" id="footprint" onclick="popUp(4)"></div>
+        <div class="clickable" id="footprint_flip" onclick="popUp(4)"></div>
         <!-- Evidence Marker -->
-        <div id="marker1" onclick="popUp(0)"></div>
+        <div class="clickable" id="marker6" onclick="popUp(0)"></div>
         <!-- Blood -->
-        <div id="blood" onclick="popUp(5)"></div>
+        <div class="clickable" id="blood" onclick="popUp(5)"></div>
+                <!-- Evidence Marker -->
+                <div class="clickable" id="marker1" onclick="popUp(0)"></div>
         <!-- Body -->
-        <div id="body" onclick="popUp(6)"></div>
+        <div class="clickable" id="body" onclick="popUp(6)"></div>
         <!-- Evidence Marker -->
-        <div id="marker4" onclick="popUp(0)"></div>
+        <div class="clickable" id="marker4" onclick="popUp(0)"></div>
         <!-- Murder Weapon -->
-        <div id="weapon" onclick="popUp(7)"></div>
+        <div class="clickable" id="weapon" onclick="popUp(7)"></div>
+        <!-- Evidence Marker -->
+        <div class="clickable" id="marker7" onclick="popUp(0)"></div>
+        <!-- Wallet -->
+        <div class="clickable" id="wallet" onclick="popUp(8)"></div>
     </div>
-    <div class="spotlight">
-        <h1 id="evidence">Find Evidence At the Crime Scene</h1>
+    <div class="spotlight" id="p">
+       <div class="popup" id="popup">
+            <h1 id="evidence">Find Evidence At the Crime Scene</h1>
+            <p id="description">Click on evidence to learn about it.</p>
+            <img id="picture" src="marker.png" alt="">
+            <button onclick="closeWindow()"><i class="fas fa-window-close"></i></button>
+       </div>
     </div>
     <div id="wrapper">
 
@@ -80,6 +92,22 @@
                     licensure in their field of study. </p>
             </main>
         </header>
+        <article id="northwest">
+                <img src="West-MEC-Arrow-White.png" alt="" class="wow slideInLeft">
+                <div class="content">
+                    <div class="center wow fadeInDown">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="100" height="100"
+                            viewBox="0 0 192 192"
+                            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M30.36,3.72c-0.165,0.03 -0.33,0.075 -0.48,0.12c-1.785,0.405 -3.045,2.01 -3,3.84v38.4h38.4c1.38,0.015 2.67,-0.705 3.375,-1.905c0.69,-1.2 0.69,-2.67 0,-3.87c-0.705,-1.2 -1.995,-1.92 -3.375,-1.905h-25.56c14.445,-14.19 34.275,-23.04 56.28,-23.04c44.79,0 80.64,35.85 80.64,80.64c0,44.79 -35.85,80.64 -80.64,80.64c-44.79,0 -80.64,-35.85 -80.64,-80.64c0,-13.185 3.255,-26.085 8.76,-37.08l-6.84,-3.48c-6.015,12.045 -9.6,26.1 -9.6,40.56c0,48.9 39.42,88.32 88.32,88.32c48.9,0 88.32,-39.42 88.32,-88.32c0,-48.9 -39.42,-88.32 -88.32,-88.32c-23.895,0 -45.63,9.585 -61.44,24.96v-24.96c0.045,-1.11 -0.405,-2.175 -1.2,-2.925c-0.81,-0.765 -1.905,-1.14 -3,-1.035zM92.16,34.56v54.84c-2.295,1.335 -3.84,3.765 -3.84,6.6c0,0.66 0.075,1.305 0.24,1.92l-26.04,26.04l5.52,5.52l26.04,-26.04c0.615,0.165 1.26,0.24 1.92,0.24c4.245,0 7.68,-3.435 7.68,-7.68c0,-2.835 -1.545,-5.265 -3.84,-6.6v-54.84z"></path></g></g></g></svg>
+                    </div>
+    
+                    <h1 class="center wow fadeInUp">The Next Program Year Starts Soon</h1>
+                    <h2 class="center wow fadeInUp" id="time">Hurry! The number of seats is limited.</h2>
+                    <p class="center">Apply now to reserve your seat in West-MEC's Law & Public Safety Program.</p>
+                    <a href="#" class="center">Apply Now</a>
+                </div>
+            </article>
         <section>
             <div class="wow fadeInUpBig">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 192 192"
