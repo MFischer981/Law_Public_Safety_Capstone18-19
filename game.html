@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Law Public Safety</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/qoj3iga.css">
+    <link rel="stylesheet" href="animate.css">
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="spotlight.css">
+</head>
+
+<body>
+
+    <div class="feature_crime">
+        <!-- Evidence Marker -->
+        <div class="clickable" id="marker5" onclick="popUp(0)"></div>
+        <!-- Drugs -->
+        <div class="clickable" id="drugs" onclick="popUp(1)"></div>
+        <!-- Evidence Marker -->
+        <div class="clickable" id="marker3" onclick="popUp(0)"></div>
+        <!-- Fingerprints -->
+        <div class="clickable" id="prints" onclick="popUp(2)"></div>
+        <div class="clickable" id="prints_flip" onclick="popUp(2)"></div>
+        <!-- Documents -->
+        <div class="clickable" id="documents" onclick="popUp(3)"></div>
+        <!-- Evidence Marker -->
+        <div class="clickable" id="marker2" onclick="popUp(0)"></div>
+        <!-- Footprints -->
+        <div class="clickable" id="footprint" onclick="popUp(4)"></div>
+        <div class="clickable" id="footprint_flip" onclick="popUp(4)"></div>
+        <!-- Evidence Marker -->
+        <div class="clickable" id="marker6" onclick="popUp(0)"></div>
+        <!-- Blood -->
+        <div class="clickable" id="blood" onclick="popUp(5)"></div>
+        <!-- Evidence Marker -->
+        <div class="clickable" id="marker1" onclick="popUp(0)"></div>
+        <!-- Body -->
+        <div class="clickable" id="body" onclick="popUp(6)"></div>
+        <!-- Evidence Marker -->
+        <div class="clickable" id="marker4" onclick="popUp(0)"></div>
+        <!-- Murder Weapon -->
+        <div class="clickable" id="weapon" onclick="popUp(7)"></div>
+        <!-- Evidence Marker -->
+        <div class="clickable" id="marker7" onclick="popUp(0)"></div>
+        <!-- Wallet -->
+        <div class="clickable" id="wallet" onclick="popUp(8)"></div>
+    </div>
+    <div class="spotlight" id="p">
+        <div class="popup" id="popup">
+            <h1 id="evidence">Find Evidence At the Crime Scene</h1>
+            <p id="description">Click on evidence to learn about it.</p>
+            <img id="picture" src="marker.png" alt="">
+            <button onclick="closeWindow()"><i class="fas fa-window-close"></i></button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="spotlight.js"></script>
+</body>
+
+</html>

@@ -15,67 +15,21 @@
         new WOW().init();
     </script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" href="spotlight.css">
-
 </head>
 
 <body>
-
-    <div class="feature_crime">
-        <!-- Evidence Marker -->
-        <div class="clickable" id="marker5" onclick="popUp(0)"></div>
-        <!-- Drugs -->
-        <div class="clickable" id="drugs" onclick="popUp(1)"></div>
-        <!-- Evidence Marker -->
-        <div class="clickable" id="marker3" onclick="popUp(0)"></div>
-        <!-- Fingerprints -->
-        <div class="clickable" id="prints" onclick="popUp(2)"></div>
-        <div class="clickable" id="prints_flip" onclick="popUp(2)"></div>
-        <!-- Documents -->
-        <div class="clickable" id="documents" onclick="popUp(3)"></div>
-        <!-- Evidence Marker -->
-        <div class="clickable" id="marker2" onclick="popUp(0)"></div>
-        <!-- Footprints -->
-        <div class="clickable" id="footprint" onclick="popUp(4)"></div>
-        <div class="clickable" id="footprint_flip" onclick="popUp(4)"></div>
-        <!-- Evidence Marker -->
-        <div class="clickable" id="marker6" onclick="popUp(0)"></div>
-        <!-- Blood -->
-        <div class="clickable" id="blood" onclick="popUp(5)"></div>
-        <!-- Evidence Marker -->
-        <div class="clickable" id="marker1" onclick="popUp(0)"></div>
-        <!-- Body -->
-        <div class="clickable" id="body" onclick="popUp(6)"></div>
-        <!-- Evidence Marker -->
-        <div class="clickable" id="marker4" onclick="popUp(0)"></div>
-        <!-- Murder Weapon -->
-        <div class="clickable" id="weapon" onclick="popUp(7)"></div>
-        <!-- Evidence Marker -->
-        <div class="clickable" id="marker7" onclick="popUp(0)"></div>
-        <!-- Wallet -->
-        <div class="clickable" id="wallet" onclick="popUp(8)"></div>
-    </div>
-    <div class="spotlight" id="p">
-        <div class="popup" id="popup">
-            <h1 id="evidence">Find Evidence At the Crime Scene</h1>
-            <p id="description">Click on evidence to learn about it.</p>
-            <img id="picture" src="marker.png" alt="">
-            <button onclick="closeWindow()"><i class="fas fa-window-close"></i></button>
-        </div>
-    </div>
     <div id="wrapper">
-
-        <header id="hero home">
+        <div id="home"></div>
+        <header id="hero">
             <img src="West-MEC-Arrow-White.png" alt="" class="wow slideInLeft">
             <div class="hamburger" onclick="menuOpen()"></div>
             <div id="menu">
                 <img src="close.png" onclick="menuOpen()" id="close">
                 <h1>Menu</h1>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="service.html">Service</a>
-                <a href="contact.html">Contact</a>
-                <a href="ctso.html">CTSO</a>  
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="index.html#ctso">CTSO</a>
                 <a href="#" id="register">Apply</a>
                 <a href="">623-877-6914</a>
                 <a href="#">anna.anderson@west-mec.org </a>
@@ -92,6 +46,8 @@
                     licensure in their field of study. </p>
             </main>
         </header>
+
+        <div id="about"></div>
         <article id="northwest">
             <img src="West-MEC-Arrow-White.png" alt="" class="wow slideInLeft">
             <div class="content">
@@ -215,6 +171,8 @@
                 <a href="#">Learn More</a><a href="#">Apply Now</a>
             </div>
         </article>
+
+        <div id="contact"></div>
         <article id="northwest">
             <img src="West-MEC-Arrow-White.png" alt="" class="wow slideInLeft">
             <div class="content">
@@ -245,7 +203,32 @@
         </article>
         <iframe id="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.847749599067!2d-112.34687264303734!3d33.6336127766842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b44a4c816e5af%3A0x61da180d51e2250b!2sWest-MEC+Northwest+Campus!5e1!3m2!1sen!2sus!4v1555706754695!5m2!1sen!2sus"
-            frameborder="0" style="border:0" allowfullscreen></iframe>
+            frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+        <article id="contact">
+            <img src="West-MEC-Arrow-White.png" alt="" class="wow slideInLeft">
+            <div class="content">
+                <h1 class="wow fadeInLeft">Contact Us</h1>
+                <h2 class="wow fadeInLeftBig">Contact WestMEC's Law, Public Safety, and Security program for
+                    more
+                    information about the program.</h2>
+                <form action="">
+                    <label for="">Name</label>
+                    <input type="text" required id="name">
+                    <label for="">COMPANY</label>
+                    <input type="text" required id="company">
+                    <label for="">PHONE NUMBER</label>
+                    <input type="text" required id="phone">
+                    <label for="">EMAIL</label>
+                    <input type="text" required id="email">
+                    <label for="">COMMENT</label>
+                    <textarea name="" id="comment" required></textarea>
+                    <button onclick="runSubmit()">SEND COMMENT</button>
+                </form>
+            </div>
+        </article>
+
+        <div id="ctso"></div>
         <article>
             <img src="icon.png" alt="" class="wow slideInLeft">
             <div class="content">
@@ -273,28 +256,7 @@
                 </div>
             </section>
         </article>
-        <article id="contact">
-            <img src="West-MEC-Arrow-White.png" alt="" class="wow slideInLeft">
-            <div class="content">
-                <h1 class="wow fadeInLeft">Contact Us</h1>
-                <h2 class="wow fadeInLeftBig">Contact WestMEC's Law, Public Safety, and Security program for more
-                    information about the program.</h2>
-                <form action="">
-                    <label for="">Name</label>
-                    <input type="text" required placeholder="First and Last Name" id="name">
-                    <label for="">COMPANY</label>
-                    <input type="text" required placeholder="Company name" id="company">
-                    <label for="">PHONE NUMBER</label>
-                    <input type="text" required placeholder="nnn-nnn-nnnn" pattern="\d{3}-\d{3}-\d{4}$" id="phone">
-                    <label for="">EMAIL</label>
-                    <input type="text" required placeholder="Email@Address.com"
-                        pattern="^(\D)+(\w)*((\.(\w)+)?)+@(\D)+(\w)*((\.(\D)+(\w)*)+)?(\.)[a-z]{2,4}$" id="email">
-                    <label for="">COMMENT</label>
-                    <textarea name="" id="comment" required></textarea>
-                    <button onclick="runSubmit()">SEND COMMENT</button>
-                </form>
-            </div>
-        </article>
+
         <section class="footer">
             <div>
                 <h1>Links</h1>
