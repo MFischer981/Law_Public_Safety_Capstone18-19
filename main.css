@@ -12,10 +12,13 @@ html {
 
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
+}
 
 img {
     pointer-events: none;
@@ -110,6 +113,7 @@ header main a {
     text-transform: uppercase;
     position: relative;
     z-index: 5;
+    border-r
 }
 
 header main a:hover {
@@ -262,10 +266,10 @@ section div.image {
 
 section div.image:hover {
     box-shadow: 0 20px 20px rgb(0, 0, 0);
-    
+
 }
 
-section  div.image#arrest {
+section div.image#arrest {
     background: url("arrest2.jpg");
     background-position: center;
     background-size: cover;
@@ -273,7 +277,7 @@ section  div.image#arrest {
     height: 600px;
 }
 
-section  div.image#students {
+section div.image#students {
     background: url("students.jpg");
     background-position: center;
     background-size: cover;
@@ -286,7 +290,7 @@ section div.image h1 {
     font-weight: 700;
     font-style: normal;
     color: white;
-    font-size: 42px;
+    font-size: calc(22px + 2vw);
     position: relative;
     left: 50%;
     top: 50%;
@@ -399,7 +403,7 @@ section img {
 }
 
 section img {
-    width: 20vw;
+    max-width: 20vw;
     height: auto;
     opacity: 1;
     mix-blend-mode: overlay;
@@ -428,7 +432,7 @@ section.footer a.social {
     font-size: 32px;
     display: inline-block;
     border-radius: 50px;
-    border: 3px solid whitesmoke;
+    border: 3px solid white;
     height: 64px;
     width: 64px;
     position: relative;
@@ -502,6 +506,33 @@ article div.content {
     display: block;
     margin: 10px auto;
     max-width: 1200px;
+}
+
+article div.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.grid div {
+    margin: 0;
+}
+
+div.grid div.imageright {
+    background: url("students.jpg");
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: auto;
+    margin-left: 10px;
+}
+
+div.grid div.imageleft {
+    background: url("students.jpg");
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: auto;
+    margin-right: 10px;
 }
 
 article svg {
@@ -628,8 +659,6 @@ iframe {
         grid-template-columns: 1fr;
     }
 
-
-
     article img,
     header img,
     section img {
@@ -641,8 +670,7 @@ iframe {
     }
 
     section img {
-        width: 40vw;
-        height: auto;
+        max-width: 120vw;
         opacity: 1;
         mix-blend-mode: overlay;
     }
@@ -660,7 +688,48 @@ iframe {
         margin: 20px 0;
         display: block;
     }
+
+    section div.image h1 {
+        font-family: usual, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: white;
+        font-size: calc(22px + 8vw);
+    }
 }
+
+@media screen and (max-width: 768px) {
+
+    article div.grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    div.grid div {
+        margin: 0;
+    }
+
+    div.grid div.imageright {
+        background: url("students.jpg");
+        background-position: center;
+        background-size: cover;
+        display: block;
+        height: 400px;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    div.grid div.imageleft {
+        background: url("students.jpg");
+        background-position: center;
+        background-size: cover;
+        display: block;
+        height: 400px;
+        margin-top: 20px;
+        margin-right: 0px;
+    }
+}
+
 
 #buttonTop {
     position: fixed;
@@ -742,4 +811,3 @@ input::placeholder {
     color: #c9c5c5e2;
     font-size: 17px;
 }
-
