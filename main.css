@@ -10,11 +10,12 @@ html {
     user-select: none;
 }
 
-*,
-*:before,
-*:after {
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
     box-sizing: inherit;
-}
+  }
 
 img {
     pointer-events: none;
@@ -23,7 +24,6 @@ img {
 img#close {
     pointer-events: all;
 }
-
 
 
 div#wrapper {
@@ -220,6 +220,11 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+section.short {
+    padding: 40px 20px;
+    max-width: 1600px;
+}
+
 section.footer {
     max-width: 1200px;
     margin: 0 auto;
@@ -239,10 +244,55 @@ article.white section {
 
 
 section div {
-    padding: 10px 10px 80px;
-    display: block;
     position: relative;
-    margin: 10px;
+    margin: 20px;
+    display: block;
+}
+
+section div.image {
+    background: url("fight.jpg");
+    background-position: center;
+    background-size: cover;
+    display: block;
+    height: 600px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: .2s;
+    border-radius: 6px;
+}
+
+section div.image:hover {
+    box-shadow: 0 20px 20px rgb(0, 0, 0);
+    
+}
+
+section  div.image#arrest {
+    background: url("arrest2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: block;
+    height: 600px;
+}
+
+section  div.image#students {
+    background: url("students.jpg");
+    background-position: center;
+    background-size: cover;
+    display: block;
+    height: 600px;
+}
+
+section div.image h1 {
+    font-family: usual, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 42px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
 }
 
 section.footer div {
@@ -284,13 +334,15 @@ section a {
     border: 3px #f90 solid;
     padding: 12px 24px;
     text-decoration: none;
-    position: absolute;
-    bottom: 20px;
+    position: relative;
     text-align: center;
     text-transform: uppercase;
     transition: .2s;
-
+    margin: 10px 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 
 section.footer a {
     position: relative;
@@ -298,7 +350,10 @@ section.footer a {
     padding: 0px 10px 10px;
     border: 0;
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
+    left: 0;
+    transform: translateX(0);
+    margin: 0;
 }
 
 section.footer a:after {
@@ -312,6 +367,11 @@ section.footer a:after {
 
 .footer a:hover::after {
     width: 100%;
+}
+
+section#clear a {
+    left: 0;
+    transform: translateX(0);
 }
 
 .footer img {
@@ -336,6 +396,13 @@ section img {
     left: 6%;
     height: 60%;
     opacity: .1;
+}
+
+section img {
+    width: 20vw;
+    height: auto;
+    opacity: 1;
+    mix-blend-mode: overlay;
 }
 
 header img#close {
@@ -434,7 +501,6 @@ article#northwest {
 article div.content {
     display: block;
     margin: 10px auto;
-    padding: 10px;
     max-width: 1200px;
 }
 
@@ -554,7 +620,7 @@ iframe {
     height: 600px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
 
     section,
     article.white section,
@@ -562,10 +628,7 @@ iframe {
         grid-template-columns: 1fr;
     }
 
-    article.white section div.image {
-        display: block;
-        height: 400px;
-    }
+
 
     article img,
     header img,
@@ -575,7 +638,13 @@ iframe {
         top: 10%;
         left: 6%;
         height: 40%;
-        opacity: .1;
+    }
+
+    section img {
+        width: 40vw;
+        height: auto;
+        opacity: 1;
+        mix-blend-mode: overlay;
     }
 
     header img#close {
@@ -584,6 +653,12 @@ iframe {
         top: 0;
         left: 0;
         height: auto;
+    }
+
+    section div {
+        position: relative;
+        margin: 20px 0;
+        display: block;
     }
 }
 
@@ -623,7 +698,8 @@ form label {
 form input {
     position: relative;
     display: block;
-    padding: 8px;
+    padding: 8px 0;
+    margin: 0px;
     border: 0;
     text-align: left;
     margin: 0 0 16px;
@@ -642,10 +718,10 @@ form input {
 form textarea {
     position: relative;
     display: block;
-    padding: 8px;
+    padding: 8px 0;
+    margin: 0px;
     border: 0;
     text-align: left;
-    margin: 0 0 16px;
     color: orange;
     font-family: usual,
         sans-serif;
@@ -655,8 +731,8 @@ form textarea {
     font-size: 22px;
     background: transparent;
     text-transform: uppercase;
-    width: 80%;
     height: 120px;
+    width: 80%;
     resize: none;
     outline: none;
 }
@@ -666,3 +742,4 @@ input::placeholder {
     color: #c9c5c5e2;
     font-size: 17px;
 }
+
