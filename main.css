@@ -26,6 +26,11 @@ img {
 
 img#close {
     pointer-events: all;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
 }
 
 
@@ -113,7 +118,6 @@ header main a {
     text-transform: uppercase;
     position: relative;
     z-index: 5;
-    border-r
 }
 
 header main a:hover {
@@ -409,13 +413,6 @@ section img {
     mix-blend-mode: overlay;
 }
 
-header img#close {
-    opacity: 1;
-    position: relative;
-    top: 0;
-    left: 0;
-    height: auto;
-}
 
 section.footer h1 {
     text-align: left;
@@ -508,9 +505,16 @@ article div.content {
     max-width: 1200px;
 }
 
+article div.content_wide {
+    max-width: 1600px;
+    margin: 10px auto;
+}
+
 article div.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 div.grid div {
@@ -526,13 +530,28 @@ div.grid div.imageright {
     margin-left: 10px;
 }
 
-div.grid div.imageleft {
-    background: url("students.jpg");
+div.grid div.imageright#imagectso {
+    background: url("fight.jpg");
     background-position: center;
     background-size: cover;
     display: block;
     width: auto;
-    margin-right: 10px;
+}
+
+div.grid div.imageright#imagecollege {
+    background: url("arrest2.jpg");
+    background-position: top center;
+    background-size: cover;
+    display: block;
+    width: auto;
+}
+
+div.grid div.imageright#imageteacher {
+    background: url("WestMEC headshot.jpg");
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: auto;
 }
 
 article svg {
@@ -675,14 +694,6 @@ iframe {
         mix-blend-mode: overlay;
     }
 
-    header img#close {
-        opacity: 1;
-        position: relative;
-        top: 0;
-        left: 0;
-        height: auto;
-    }
-
     section div {
         position: relative;
         margin: 20px 0;
@@ -698,7 +709,7 @@ iframe {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 
     article div.grid {
         display: grid;
@@ -719,15 +730,6 @@ iframe {
         margin-left: 0px;
     }
 
-    div.grid div.imageleft {
-        background: url("students.jpg");
-        background-position: center;
-        background-size: cover;
-        display: block;
-        height: 400px;
-        margin-top: 20px;
-        margin-right: 0px;
-    }
 }
 
 
