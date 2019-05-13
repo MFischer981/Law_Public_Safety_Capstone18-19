@@ -1,3 +1,4 @@
+/*  */
 html {
     box-sizing: border-box;
     background-color: #353535;
@@ -10,20 +11,24 @@ html {
     user-select: none;
 }
 
+/*  */
 html {
     box-sizing: border-box;
 }
 
+/*  */
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
 
+/*  */
 img {
     pointer-events: none;
 }
 
+/*  */
 img#close {
     pointer-events: all;
     opacity: 1;
@@ -33,23 +38,25 @@ img#close {
     height: auto;
 }
 
-
+/*  */
 div#wrapper {
     position: relative;
     left: 0%;
     transition: 1s;
-
 }
 
+/*  */
 div#wrapper.menu {
     left: 320px;
 }
 
+/*  */
 body {
     margin: 0;
     overflow: hidden;
 }
 
+/*  */
 nav {
     display: block;
     height: 90px;
@@ -60,6 +67,7 @@ nav {
     width: 100%;
 }
 
+/*  */
 header {
     position: relative;
     display: block;
@@ -69,12 +77,14 @@ header {
     background-attachment: fixed;
 }
 
+/*  */
 header main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
+/*  */
 header h1 {
     position: relative;
     z-index: 5;
@@ -89,6 +99,7 @@ header h1 {
     max-width: 720px;
 }
 
+/*  */
 header h2 {
     position: relative;
     z-index: 5;
@@ -102,6 +113,7 @@ header h2 {
     max-width: 600px;
 }
 
+/*  */
 header main a {
     display: inline-block;
     font-size: 26px;
@@ -120,15 +132,18 @@ header main a {
     z-index: 5;
 }
 
+/*  */
 header main a:hover {
     background: #f90;
 }
 
+/*  */
 header .spacer {
     display: block;
     height: 30px;
 }
 
+/*  */
 header p {
     font-size: 28px;
     color: white;
@@ -139,6 +154,7 @@ header p {
     z-index: 5;
 }
 
+/*  */
 .hamburger {
     position: fixed;
     top: 20px;
@@ -152,6 +168,7 @@ header p {
     z-index: 101;
 }
 
+/*  */
 #menu {
     display: block;
     background: rgb(12, 12, 12);
@@ -165,10 +182,12 @@ header p {
     z-index: 102;
 }
 
+/*  */
 #menu.open {
     left: 0%;
 }
 
+/*  */
 #menu a {
     display: inline-block;
     color: white;
@@ -182,10 +201,12 @@ header p {
     float: left;
 }
 
+/*  */
 #menu a#register {
     margin-top: 80px;
 }
 
+/*  */
 #menu a:after {
     display: block;
     content: '';
@@ -195,10 +216,12 @@ header p {
     transition: .4s;
 }
 
+/*  */
 #menu a:hover::after {
     width: 100%;
 }
 
+/*  */
 #menu h1 {
     display: block;
     color: #f90;
@@ -213,12 +236,14 @@ header p {
     text-transform: uppercase;
 }
 
+/*  */
 #menu img {
     height: 48px;
     width: 48px;
     float: right;
 }
 
+/*  */
 section {
     position: relative;
     max-width: 1400px;
@@ -228,11 +253,13 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+/*  */
 section.short {
     padding: 40px 20px;
     max-width: 1600px;
 }
 
+/*  */
 section.footer {
     max-width: 1200px;
     margin: 0 auto;
@@ -242,6 +269,7 @@ section.footer {
     background-color: #353535;
 }
 
+/*  */
 article.white section {
     max-width: 1400px;
     margin: 0 auto;
@@ -250,13 +278,14 @@ article.white section {
     grid-template-columns: 1fr 1fr;
 }
 
-
+/*  */
 section div {
     position: relative;
     margin: 20px;
     display: block;
 }
 
+/*  */
 section div.image {
     background: url("fight.jpg");
     background-position: center;
@@ -268,11 +297,13 @@ section div.image {
     border-radius: 6px;
 }
 
+/*  */
 section div.image:hover {
     box-shadow: 0 20px 20px rgb(0, 0, 0);
 
 }
 
+/*  */
 section div.image#arrest {
     background: url("arrest2.jpg");
     background-position: center;
@@ -281,6 +312,7 @@ section div.image#arrest {
     height: 600px;
 }
 
+/*  */
 section div.image#students {
     background: url("students.jpg");
     background-position: center;
@@ -289,6 +321,7 @@ section div.image#students {
     height: 600px;
 }
 
+/*  */
 section div.image h1 {
     font-family: usual, sans-serif;
     font-weight: 700;
@@ -303,16 +336,19 @@ section div.image h1 {
     text-shadow: 0 0 10px black;
 }
 
+/*  */
 section.footer div {
     padding: 10px 10px 10px;
 }
 
+/*  */
 section svg {
     display: block;
     margin: 0 auto 20px;
     filter: drop-shadow(0 0 5px black);
 }
 
+/*  */
 section h1 {
     font-size: 32px;
     color: #f90;
@@ -324,6 +360,7 @@ section h1 {
     text-align: center;
 }
 
+/*  */
 section p {
     font-size: 20px;
     color: white;
@@ -332,6 +369,7 @@ section p {
     font-style: normal;
 }
 
+/*  */
 section a {
     display: inline-block;
     font-size: 26px;
@@ -351,8 +389,7 @@ section a {
     transform: translateX(-50%);
 }
 
-
-
+/*  */
 section.footer a {
     position: relative;
     display: inline-block;
@@ -365,6 +402,7 @@ section.footer a {
     margin: 0;
 }
 
+/*  */
 section.footer a:after {
     display: block;
     content: '';
@@ -374,15 +412,18 @@ section.footer a:after {
     transition: .7s;
 }
 
+/*  */
 .footer a:hover::after {
     width: 100%;
 }
 
+/*  */
 section#clear a {
     left: 0;
     transform: translateX(0);
 }
 
+/*  */
 .footer img {
     display: block;
     position: absolute;
@@ -392,10 +433,12 @@ section#clear a {
     opacity: .1;
 }
 
+/*  */
 form {
     position: relative;
 }
 
+/*  */
 article img,
 header img,
 section img {
@@ -407,6 +450,7 @@ section img {
     opacity: .1;
 }
 
+/*  */
 section img {
     max-width: 20vw;
     height: auto;
@@ -414,7 +458,7 @@ section img {
     mix-blend-mode: overlay;
 }
 
-
+/*  */
 section.footer h1 {
     text-align: left;
     margin-bottom: 30px;
@@ -426,6 +470,7 @@ section.footer h1 {
     font-size: 26px;
 }
 
+/*  */
 section.footer a.social {
     font-size: 32px;
     display: inline-block;
@@ -437,40 +482,48 @@ section.footer a.social {
     text-align: center;
 }
 
+/*  */
 section.footer a.social:after {
     height: 0;
 }
 
+/*  */
 section.footer a.social i {
     position: absolute;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
 
+/*  */
 section.footer a:hover {
     color: #f90;
 }
 
+/*  */
 article.white section div {
     padding-bottom: 10px;
 }
 
+/*  */
 article.white section a {
     position: relative;
     display: inline-block;
 }
 
+/*  */
 article {
     position: relative;
     background: linear-gradient(45deg, black, rgb(56, 56, 56));
     padding: 40px 20px;
 }
 
+/*  */
 article.white {
     background: black;
     padding: 40px 20px;
 }
 
+/*  */
 article.white div.image {
     display: block;
     background: url("background.png");
@@ -480,6 +533,7 @@ article.white div.image {
     outline-offset: -20px;
 }
 
+/*  */
 article#crime {
     background: url("crime banner.png");
     background-size: cover;
@@ -487,12 +541,14 @@ article#crime {
     background-attachment: fixed;
 }
 
+/*  */
 article#contact {
     background: linear-gradient(90deg, rgba(255, 153, 0, 0.5), rgba(0, 0, 0, 0)), url("crime banner.png");
     background-size: cover;
     background-position: center;
 }
 
+/*  */
 article#northwest {
     background: url("northwest.png");
     background-size: cover;
@@ -500,17 +556,20 @@ article#northwest {
     padding: 80px 20px;
 }
 
+/*  */
 article div.content {
     display: block;
     margin: 10px auto;
     max-width: 1200px;
 }
 
+/*  */
 article div.content_wide {
     max-width: 1600px;
     margin: 10px auto;
 }
 
+/*  */
 article div.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -518,10 +577,12 @@ article div.grid {
     margin: 0 auto;
 }
 
+/*  */
 div.grid div {
     margin: 0;
 }
 
+/*  */
 div.grid div.imageright {
     background: url("students.jpg");
     background-position: center;
@@ -532,6 +593,7 @@ div.grid div.imageright {
     border-radius: 6px;
 }
 
+/*  */
 div.grid div.imageright#imagectso {
     background: url("fight.jpg");
     background-position: center;
@@ -541,6 +603,7 @@ div.grid div.imageright#imagectso {
     border-radius: 6px;
 }
 
+/*  */
 div.grid div.imageright#imagecollege {
     background: url("arrest2.jpg");
     background-position: top center;
@@ -550,6 +613,7 @@ div.grid div.imageright#imagecollege {
     border-radius: 6px;
 }
 
+/*  */
 div.grid div.imageright#imageteacher {
     background: url("WestMEC headshot.jpg");
     background-position: center;
@@ -559,12 +623,14 @@ div.grid div.imageright#imageteacher {
     border-radius: 6px;
 }
 
+/*  */
 article svg {
     filter: drop-shadow(0 0 5px black);
     margin: 0 auto;
     display: block;
 }
 
+/*  */
 article h1 {
     font-size: 48px;
     color: #f90;
@@ -577,10 +643,12 @@ article h1 {
     z-index: 5;
 }
 
+/*  */
 article h1.hero {
     font-size: 72px;
 }
 
+/*  */
 article h2 {
     font-size: 32px;
     color: white;
@@ -595,6 +663,7 @@ article h2 {
     z-index: 5;
 }
 
+/*  */
 article h1.center,
 article h2.center,
 article p.center {
@@ -604,6 +673,7 @@ article p.center {
     z-index: 5;
 }
 
+/*  */
 article p {
     font-size: 24px;
     color: white;
@@ -617,6 +687,7 @@ article p {
     z-index: 5;
 }
 
+/*  */
 article a,
 article button {
     display: inline-block;
@@ -637,6 +708,7 @@ article button {
 
 }
 
+/*  */
 article a.center {
     position: relative;
     left: 50%;
@@ -646,17 +718,20 @@ article a.center {
     z-index: 5;
 }
 
+/* Every time the mouse is hovered over the article button and anchor links, the background is changed to an orange. */
 article a:hover,
 article button:hover {
     background: #f90;
 }
 
+/* Makes primary headings to color of orange pushed to the left. */
 article.white h1 {
     color: #f90;
     border-color: black;
     text-align: left;
 }
 
+/* pushes the secondary heading, paaragraph, and anchor links to the left.  */
 article.white h2,
 article.white p,
 article.white a {
@@ -665,24 +740,29 @@ article.white a {
     text-align: left;
 }
 
+/* pushes the paragraph down in the article.  */
 article.white p {
     margin-top: 20px;
 }
 
+/* Makes the map full width of the page. */
 iframe {
     width: 100%;
     display: block;
     height: 600px;
 }
 
+/* The media querry is for up to 1000 px max and the styles are only for devices that contains  px screens. */
 @media screen and (max-width: 1000px) {
 
+    /* For Section, article.white section, and section.footer shrinks down to one fr.   */
     section,
     article.white section,
     section.footer {
         grid-template-columns: 1fr;
     }
 
+    /* The images in the article, header, and the section will be be positioned and will not move.  */
     article img,
     header img,
     section img {
@@ -693,18 +773,21 @@ iframe {
         height: 40%;
     }
 
+    /*  */
     section img {
         max-width: 120vw;
         opacity: 1;
         mix-blend-mode: overlay;
     }
 
+    /* makes the div content inside of the section have 20 px on top.  */
     section div {
         position: relative;
         margin: 20px 0;
         display: block;
     }
 
+    /*  */
     section div.image h1 {
         font-family: usual, sans-serif;
         font-weight: 700;
@@ -714,17 +797,21 @@ iframe {
     }
 }
 
+/* The media querry is for up to 800 px and the styles are only for devices that contains 800 px screens. */
 @media screen and (max-width: 800px) {
 
+    /* shrinks down the page to one fr. */
     article div.grid {
         display: grid;
         grid-template-columns: 1fr;
     }
 
+    /* removes the margins on the images. */
     div.grid div {
         margin: 0;
     }
 
+    /* Pushes the image to the center of the page and is pushed bottom.  */
     div.grid div.imageright {
         background: url("students.jpg");
         background-position: center;
@@ -737,7 +824,7 @@ iframe {
 
 }
 
-
+/* The scroll to top button scrolls with the user, the button is on the right, background color of whitesmoke, the image color of orange.  */
 #buttonTop {
     position: fixed;
     bottom: 30px;
@@ -751,9 +838,10 @@ iframe {
     z-index: 100;
 }
 
+/* When the mouse hovers over the scroll to top button, the nutton will change to a medium grey. */
 #buttonTop:hover {
     background-color: #434443;
-    ;
+
 }
 
 /* Makes all the labels above the form inputs and textarea boxes have a color of white, makes the font bolded and makes the labels be in uppercase. */
