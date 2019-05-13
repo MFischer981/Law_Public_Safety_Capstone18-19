@@ -756,6 +756,7 @@ iframe {
     ;
 }
 
+/* Makes all the labels above the form inputs and textarea boxes have a color of white, makes the font bolded and makes the labels be in uppercase. */
 form label {
     position: relative;
     display: block;
@@ -771,6 +772,7 @@ form label {
     text-transform: uppercase;
 }
 
+/* gives the input boxes in the contact form no outline, make a bottom border thats orange, bolds the font and make the font color orange.  */
 form input {
     position: relative;
     display: block;
@@ -791,6 +793,7 @@ form input {
     outline: none;
 }
 
+/* gives the textarea box in the contact form no outline, make a bottom border thats orange, bolds the font and make the font color orange.  */
 form textarea {
     position: relative;
     display: block;
@@ -813,6 +816,7 @@ form textarea {
     outline: none;
 }
 
+/* Gives no outline on the inputs in the contact form, makes the font color a white grey with an slight opacity. */
 input::placeholder {
     outline: none;
     color: #c9c5c5e2;
