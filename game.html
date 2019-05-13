@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+<!-- Div containing game content. Items positioned using absolute positioning to allow for scaling of page. Elements have click events to allow the user to open pop-ups that provide information about each item. -->
     <div class="feature_crime">
         <!-- Evidence Marker -->
         <div class="clickable" id="marker5" onclick="popUp(0)"></div>
@@ -54,6 +54,7 @@
         <!-- Wallet -->
         <div class="clickable" id="wallet" onclick="popUp(8)"></div>
     </div>
+    <!-- Spotlight div uses radial gradient to get spotlight position using mouse coordinates. The div contains the pop-up element which can be hidden using the closeWindow button. -->
     <div class="spotlight" id="p">
         <div class="popup" id="popup">
             <h1 id="evidence">Find Evidence At the Crime Scene</h1>
@@ -63,6 +64,7 @@
         </div>
     </div>
 
+    <!-- Main JS script, spotlight script uses mouse position to position elements on the page. -->
     <script src="main.js"></script>
     <script src="spotlight.js"></script>
 </body>
