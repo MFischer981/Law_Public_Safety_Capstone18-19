@@ -352,6 +352,7 @@ section a {
 }
 
 
+
 section.footer a {
     position: relative;
     display: inline-block;
@@ -528,6 +529,7 @@ div.grid div.imageright {
     display: block;
     width: auto;
     margin-left: 10px;
+    border-radius: 6px;
 }
 
 div.grid div.imageright#imagectso {
@@ -536,6 +538,7 @@ div.grid div.imageright#imagectso {
     background-size: cover;
     display: block;
     width: auto;
+    border-radius: 6px;
 }
 
 div.grid div.imageright#imagecollege {
@@ -544,6 +547,7 @@ div.grid div.imageright#imagecollege {
     background-size: cover;
     display: block;
     width: auto;
+    border-radius: 6px;
 }
 
 div.grid div.imageright#imageteacher {
@@ -552,6 +556,7 @@ div.grid div.imageright#imageteacher {
     background-size: cover;
     display: block;
     width: auto;
+    border-radius: 6px;
 }
 
 article svg {
