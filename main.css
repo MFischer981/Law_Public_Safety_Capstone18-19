@@ -90,12 +90,12 @@ header h1 {
     position: relative;
     z-index: 5;
     font-size: 60px;
-    color: #f90;
+    color: white;
     font-family: usual, sans-serif;
     font-weight: 700;
     font-style: normal;
     margin: 0 0 16px;
-    padding-top: 120px;
+    padding-top: 40px;
     line-height: 1em;
     max-width: 720px;
 }
@@ -721,7 +721,8 @@ article a.center {
 
 /* Every time the mouse is hovered over the article button and anchor links, the background is changed to an orange. */
 article a:hover,
-article button:hover {
+article button:hover,
+section a:hover {
     background: #f90;
 }
 
@@ -759,6 +760,9 @@ iframe {
     position: absolute;
     top: 0;
     min-height: 100vh;
+    min-width: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -810,10 +814,10 @@ iframe {
 /* The media querry is for up to 800 px and the styles are only for devices that contains 800 px screens. */
 @media screen and (max-width: 800px) {
 
-    
-#law_video {
-    display: none;
-}
+
+    #law_video {
+        display: none;
+    }
 
 
     /* shrinks down the page to one fr. */
@@ -929,6 +933,7 @@ input::placeholder {
 
 /* Set fixed scrolling to scroll on iOS devices that do not support parallax. */
 @supports (-webkit-overflow-scrolling: touch) {
+
     header,
     section:nth-of-type(2),
     section:nth-of-type(4),
@@ -939,6 +944,7 @@ input::placeholder {
 }
 
 @supports not (-webkit-overflow-scrolling: touch) {
+
     header,
     section:nth-of-type(2),
     section:nth-of-type(4),
