@@ -1,4 +1,4 @@
-/*  */
+/* drag styles for images  */
 html {
     box-sizing: border-box;
     background-color: #353535;
@@ -11,7 +11,7 @@ html {
     user-select: none;
 }
 
-/*  */
+/* style for border box on the page. */
 html {
     box-sizing: border-box;
 }
@@ -23,12 +23,12 @@ html {
     box-sizing: inherit;
 }
 
-/*  */
+/* styles for all general images */
 img {
     pointer-events: none;
 }
 
-/*  */
+/* styles for all images with id of close. */
 img#close {
     pointer-events: all;
     opacity: 1;
@@ -38,25 +38,25 @@ img#close {
     height: auto;
 }
 
-/*  */
+/* position and transition styles for content in wrapper. */
 div#wrapper {
     position: relative;
     left: 0%;
     transition: 1s;
 }
 
-/*  */
+/* Puts the menu nav on the left side of the page. */
 div#wrapper.menu {
     left: 320px;
 }
 
-/*  */
+/* no extra space will show on the body of the page. */
 body {
     margin: 0;
     overflow: hidden;
 }
 
-/*  */
+/* Background and position styles for the menu nav.  */
 nav {
     display: block;
     height: 90px;
@@ -67,7 +67,7 @@ nav {
     width: 100%;
 }
 
-/*  */
+/* display and background styles for the header. */
 header {
     position: relative;
     display: block;
@@ -78,14 +78,14 @@ header {
     min-height: 100vh;
 }
 
-/*  */
+/* space between and moving header up and left. */
 header main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
-/*  */
+/* font styles and space around primary heading styles in header. */
 header h1 {
     position: relative;
     z-index: 5;
@@ -100,7 +100,7 @@ header h1 {
     max-width: 720px;
 }
 
-/*  */
+/* font styles and space around primary heading styles in header. */
 header h2 {
     position: relative;
     z-index: 5;
@@ -114,7 +114,7 @@ header h2 {
     max-width: 600px;
 }
 
-/*  */
+/* outline, border, font styles and space styles for the anchor links in the header. */
 header main a {
     display: inline-block;
     font-size: 26px;
@@ -133,18 +133,18 @@ header main a {
     z-index: 5;
 }
 
-/*  */
+/* background color for the lunks when hovered over with the mouse. */
 header main a:hover {
     background: #f90;
 }
 
-/*  */
+/* display position styles for the spacer between content. */
 header .spacer {
     display: block;
     height: 30px;
 }
 
-/*  */
+/* font styles for the text in the paragraph tags. */
 header p {
     font-size: 28px;
     color: white;
@@ -155,7 +155,7 @@ header p {
     z-index: 5;
 }
 
-/*  */
+/* Position and size styles for menu image on top. */
 .hamburger {
     position: fixed;
     top: 20px;
@@ -169,7 +169,7 @@ header p {
     z-index: 101;
 }
 
-/*  */
+/* moving styles for menu nav and general color styles. */
 #menu {
     display: block;
     background: rgb(12, 12, 12);
@@ -183,12 +183,12 @@ header p {
     z-index: 102;
 }
 
-/*  */
+/* moving styles for menu nav */
 #menu.open {
     left: 0%;
 }
 
-/*  */
+/* font styles and positioning fro links on the menu nav. */
 #menu a {
     display: inline-block;
     color: white;
@@ -202,7 +202,7 @@ header p {
     float: left;
 }
 
-/*  */
+/* margins for register section on menu nav. */
 #menu a#register {
     margin-top: 80px;
 }
@@ -649,7 +649,7 @@ article h1.hero {
     font-size: 72px;
 }
 
-/*  */
+/* styles for the secondary heading  */
 article h2 {
     font-size: 32px;
     color: white;
@@ -664,7 +664,7 @@ article h2 {
     z-index: 5;
 }
 
-/*  */
+
 article h1.center,
 article h2.center,
 article p.center {
@@ -674,7 +674,7 @@ article p.center {
     z-index: 5;
 }
 
-/*  */
+/* Add text and styles to the article p tag. */
 article p {
     font-size: 24px;
     color: white;
@@ -684,11 +684,9 @@ article p {
     margin-top: 40px;
     position: relative;
     z-index: 5;
-    position: relative;
-    z-index: 5;
 }
 
-/*  */
+/* Adds text, border, margin, padding styles to the article links and buttons. */
 article a,
 article button {
     display: inline-block;
@@ -709,7 +707,7 @@ article button {
 
 }
 
-/*  */
+/* Centers links in the article tag */
 article a.center {
     position: relative;
     left: 50%;
@@ -754,7 +752,7 @@ iframe {
     height: 600px;
 }
 
-
+/* Stles for the video clips on top of page. */
 #law_video {
     display: block;
     position: absolute;
