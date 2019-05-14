@@ -75,6 +75,7 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 /*  */
@@ -909,4 +910,32 @@ input::placeholder {
     outline: none;
     color: #c9c5c5e2;
     font-size: 17px;
+}
+
+#law_video {
+    display: block;
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
+}
+
+/* Set fixed scrolling to scroll on iOS devices that do not support parallax. */
+@supports (-webkit-overflow-scrolling: touch) {
+    header,
+    section:nth-of-type(2),
+    section:nth-of-type(4),
+    aside.main h1,
+    section#clientcanyon {
+        background-attachment: scroll;
+    }
+}
+
+@supports not (-webkit-overflow-scrolling: touch) {
+    header,
+    section:nth-of-type(2),
+    section:nth-of-type(4),
+    aside.main h1,
+    section#clientcanyon {
+        background-attachment: fixed;
+    }
 }
