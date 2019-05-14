@@ -753,6 +753,15 @@ iframe {
     height: 600px;
 }
 
+
+#law_video {
+    display: block;
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
+}
+
+
 /* The media querry is for up to 1000 px max and the styles are only for devices that contains  px screens. */
 @media screen and (max-width: 1000px) {
 
@@ -800,6 +809,12 @@ iframe {
 
 /* The media querry is for up to 800 px and the styles are only for devices that contains 800 px screens. */
 @media screen and (max-width: 800px) {
+
+    
+#law_video {
+    display: none;
+}
+
 
     /* shrinks down the page to one fr. */
     article div.grid {
@@ -910,13 +925,6 @@ input::placeholder {
     outline: none;
     color: #c9c5c5e2;
     font-size: 17px;
-}
-
-#law_video {
-    display: block;
-    position: absolute;
-    top: 0;
-    min-height: 100vh;
 }
 
 /* Set fixed scrolling to scroll on iOS devices that do not support parallax. */
