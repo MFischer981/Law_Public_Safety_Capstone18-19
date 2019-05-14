@@ -810,10 +810,10 @@ iframe {
 /* The media querry is for up to 800 px and the styles are only for devices that contains 800 px screens. */
 @media screen and (max-width: 800px) {
 
-    
-#law_video {
-    display: none;
-}
+
+    #law_video {
+        display: none;
+    }
 
 
     /* shrinks down the page to one fr. */
@@ -885,7 +885,7 @@ form input {
     border: 0;
     text-align: left;
     margin: 0 0 16px;
-    color: orange;
+    color: rgba(162, 161, 161, 0.797);
     font-family: usual,
         sans-serif;
     font-weight: 700;
@@ -929,6 +929,7 @@ input::placeholder {
 
 /* Set fixed scrolling to scroll on iOS devices that do not support parallax. */
 @supports (-webkit-overflow-scrolling: touch) {
+
     header,
     section:nth-of-type(2),
     section:nth-of-type(4),
@@ -939,6 +940,7 @@ input::placeholder {
 }
 
 @supports not (-webkit-overflow-scrolling: touch) {
+
     header,
     section:nth-of-type(2),
     section:nth-of-type(4),
