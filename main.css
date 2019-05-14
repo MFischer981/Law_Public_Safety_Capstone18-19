@@ -889,7 +889,7 @@ form input {
     border: 0;
     text-align: left;
     margin: 0 0 16px;
-    color: orange;
+    color: rgba(162, 161, 161, 0.797);
     font-family: usual,
         sans-serif;
     font-weight: 700;
