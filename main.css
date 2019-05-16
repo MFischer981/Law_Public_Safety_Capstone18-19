@@ -500,6 +500,7 @@ section.footer a.social i {
 /* Add hover color */
 section.footer a:hover {
     color: #f90;
+    background: none;
 }
 
 /* Add bottom padding to section divs inside article with class of white. */
