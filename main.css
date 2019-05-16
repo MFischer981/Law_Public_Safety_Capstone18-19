@@ -83,6 +83,8 @@ header main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
+    display: block;
+    position: relative;
 }
 
 /* font styles and space around primary heading styles in header. */
@@ -295,7 +297,7 @@ section div.image {
     height: 600px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     transition: .2s;
-    border-radius: 6px;
+    
 }
 
 /*  */
@@ -418,13 +420,13 @@ section.footer a:after {
     width: 100%;
 }
 
-/*  */
+/* Position and transform a tag. */
 section#clear a {
     left: 0;
     transform: translateX(0);
 }
 
-/*  */
+/* Set footer image size and position. */
 .footer img {
     display: block;
     position: absolute;
@@ -434,12 +436,12 @@ section#clear a {
     opacity: .1;
 }
 
-/*  */
+/* Set form position. */
 form {
     position: relative;
 }
 
-/*  */
+/* Position and size images. */
 article img,
 header img,
 section img {
@@ -451,7 +453,7 @@ section img {
     opacity: .1;
 }
 
-/*  */
+/* Style section images and set blend mode to overlay. */
 section img {
     max-width: 20vw;
     height: auto;
@@ -459,7 +461,7 @@ section img {
     mix-blend-mode: overlay;
 }
 
-/*  */
+/* Style footer headings. */
 section.footer h1 {
     text-align: left;
     margin-bottom: 30px;
@@ -471,7 +473,7 @@ section.footer h1 {
     font-size: 26px;
 }
 
-/*  */
+/* Style social icons. */
 section.footer a.social {
     font-size: 32px;
     display: inline-block;
@@ -483,48 +485,48 @@ section.footer a.social {
     text-align: center;
 }
 
-/*  */
+/* Set height of after pseudo element. */
 section.footer a.social:after {
     height: 0;
 }
 
-/*  */
+/* Position link icons. */
 section.footer a.social i {
     position: absolute;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
 
-/*  */
+/* Add hover color */
 section.footer a:hover {
     color: #f90;
 }
 
-/*  */
+/* Add bottom padding to section divs inside article with class of white. */
 article.white section div {
     padding-bottom: 10px;
 }
 
-/*  */
+/* Position and set display of section links. */
 article.white section a {
     position: relative;
     display: inline-block;
 }
 
-/*  */
+/* Position, set background and add padding. */
 article {
     position: relative;
     background: linear-gradient(45deg, black, rgb(56, 56, 56));
     padding: 40px 20px;
 }
 
-/*  */
+/* Add background color and padding */
 article.white {
     background: black;
     padding: 40px 20px;
 }
 
-/*  */
+/* Added and centered background image, set size to cover. */
 article.white div.image {
     display: block;
     background: url("background.png");
@@ -534,7 +536,7 @@ article.white div.image {
     outline-offset: -20px;
 }
 
-/*  */
+/* Added and centered background image, set size to cover. */
 article#crime {
     background: url("crime banner.png");
     background-size: cover;
@@ -542,14 +544,14 @@ article#crime {
     background-attachment: fixed;
 }
 
-/*  */
+/* Added and centered background gradient, set size to cover. */
 article#contact {
     background: linear-gradient(90deg, rgba(255, 153, 0, 0.5), rgba(0, 0, 0, 0)), url("crime banner.png");
     background-size: cover;
     background-position: center;
 }
 
-/*  */
+/* Added and centered background image, set size to cover. */
 article#northwest {
     background: url("northwest.png");
     background-size: cover;
@@ -557,20 +559,20 @@ article#northwest {
     padding: 80px 20px;
 }
 
-/*  */
+/* Center div and set max width. */
 article div.content {
     display: block;
     margin: 10px auto;
     max-width: 1200px;
 }
 
-/*  */
+/* Center div and set max width.  */
 article div.content_wide {
     max-width: 1600px;
     margin: 10px auto;
 }
 
-/*  */
+/* Display as grid with max-width of 1400px  */
 article div.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -578,12 +580,12 @@ article div.grid {
     margin: 0 auto;
 }
 
-/*  */
+/* Set div inside div with class of grid to margin of 0. */
 div.grid div {
     margin: 0;
 }
 
-/*  */
+/* Added and centered background image, set size to cover. */
 div.grid div.imageright {
     background: url("students.jpg");
     background-position: center;
@@ -591,47 +593,47 @@ div.grid div.imageright {
     display: block;
     width: auto;
     margin-left: 10px;
-    border-radius: 6px;
+    
 }
 
-/*  */
+/* Added and centered background image, set size to cover. */
 div.grid div.imageright#imagectso {
     background: url("fight.jpg");
     background-position: center;
     background-size: cover;
     display: block;
     width: auto;
-    border-radius: 6px;
+    
 }
 
-/*  */
+/* Added and centered background image, set size to cover. */
 div.grid div.imageright#imagecollege {
     background: url("arrest2.jpg");
     background-position: top center;
     background-size: cover;
     display: block;
     width: auto;
-    border-radius: 6px;
+    
 }
 
-/*  */
+/* Added and centered background image, set size to cover. */
 div.grid div.imageright#imageteacher {
     background: url("WestMEC headshot.jpg");
     background-position: center;
     background-size: cover;
     display: block;
     width: auto;
-    border-radius: 6px;
+    
 }
 
-/*  */
+/* Centered and added shadow to svg. */
 article svg {
     filter: drop-shadow(0 0 5px black);
     margin: 0 auto;
     display: block;
 }
 
-/*  */
+/* Set font, position, and color styles. */
 article h1 {
     font-size: 48px;
     color: #f90;
@@ -644,7 +646,7 @@ article h1 {
     z-index: 5;
 }
 
-/*  */
+/* Set font size */
 article h1.hero {
     font-size: 72px;
 }
